@@ -16,8 +16,8 @@ TagManager:
   - Player
   - Character
   - Ground
-  - Hallucinations
-  - ReverseHallucinations
+  - Hallucination
+  - ReverseHallucination
   - 
   - 
   - 

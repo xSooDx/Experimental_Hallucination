@@ -145,6 +145,8 @@ GameObject:
   - component: {fileID: 5420857361349278248}
   - component: {fileID: 6771708284680943249}
   - component: {fileID: 8616685848737228376}
+  - component: {fileID: 135756641613574982}
+  - component: {fileID: 135756641613574981}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -205,14 +207,14 @@ MonoBehaviour:
   SpeedChangeRate: 10
   JumpHeight: 1.2
   Gravity: -15
-  JumpTimeout: 0.1
-  FallTimeout: 0.15
+  JumpTimeout: 0
+  FallTimeout: 0.1
   Grounded: 1
   GroundedOffset: -0.14
   GroundedRadius: 0.5
   GroundLayers:
     serializedVersion: 2
-    m_Bits: 513
+    m_Bits: 2561
   CinemachineCameraTarget: {fileID: 4135013735270702863}
   TopClamp: 89
   BottomClamp: -89
@@ -265,6 +267,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phoneObject: {fileID: 5393215580427673014}
+  enrageMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  enrageCastRadius: 1
 --- !u!114 &8616685848737228376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,6 +370,36 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!54 &135756641613574982
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!136 &135756641613574981
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.6
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &1773008034081197393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -375,6 +411,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.088
+      objectReference: {fileID: 0}
+    - target: {fileID: 5870054614846241795, guid: 0168584aee061ab479298c65f8e56643,
+        type: 3}
+      propertyPath: m_AdditionalLightsShadowResolutionTier
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5927424953785553124, guid: 0168584aee061ab479298c65f8e56643,
         type: 3}
@@ -394,7 +435,7 @@ PrefabInstance:
     - target: {fileID: 5927424953785553124, guid: 0168584aee061ab479298c65f8e56643,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.944
+      value: 0.644
       objectReference: {fileID: 0}
     - target: {fileID: 5927424953785553124, guid: 0168584aee061ab479298c65f8e56643,
         type: 3}
@@ -469,17 +510,22 @@ PrefabInstance:
     - target: {fileID: 8274919037372933355, guid: 0168584aee061ab479298c65f8e56643,
         type: 3}
       propertyPath: m_Intensity
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8274919037372933355, guid: 0168584aee061ab479298c65f8e56643,
         type: 3}
       propertyPath: m_SpotAngle
-      value: 30.000002
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 8274919037372933355, guid: 0168584aee061ab479298c65f8e56643,
         type: 3}
       propertyPath: m_InnerSpotAngle
       value: 10.095779
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274919037372933355, guid: 0168584aee061ab479298c65f8e56643,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0168584aee061ab479298c65f8e56643, type: 3}

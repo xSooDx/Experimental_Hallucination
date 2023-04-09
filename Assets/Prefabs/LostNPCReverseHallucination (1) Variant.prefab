@@ -170,7 +170,7 @@ PrefabInstance:
     - target: {fileID: 3858050916273165572, guid: 8d330ecde21c4c74eafc5d76de101d4d,
         type: 3}
       propertyPath: m_Name
-      value: LostNPCReverseHallucination (1) Variant
+      value: LostNPCReverseHallucination (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3858050916273165572, guid: 8d330ecde21c4c74eafc5d76de101d4d,
         type: 3}
@@ -186,6 +186,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128645340163202807, guid: 8d330ecde21c4c74eafc5d76de101d4d,
+        type: 3}
+      propertyPath: enragedSpeed
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4137523960294270636, guid: 8d330ecde21c4c74eafc5d76de101d4d,
         type: 3}
@@ -210,7 +215,7 @@ PrefabInstance:
     - target: {fileID: 4521997147958497214, guid: 8d330ecde21c4c74eafc5d76de101d4d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.1713586
+      value: -0.63
       objectReference: {fileID: 0}
     - target: {fileID: 4521997147958497214, guid: 8d330ecde21c4c74eafc5d76de101d4d,
         type: 3}
@@ -220,7 +225,7 @@ PrefabInstance:
     - target: {fileID: 4521997147958497214, guid: 8d330ecde21c4c74eafc5d76de101d4d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.525269
+      value: 9.5019
       objectReference: {fileID: 0}
     - target: {fileID: 4521997147958497214, guid: 8d330ecde21c4c74eafc5d76de101d4d,
         type: 3}
@@ -352,6 +357,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 7603541519985146998, guid: 8d330ecde21c4c74eafc5d76de101d4d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bc32f7bf53314bd4187f34a09192b915, type: 2}
     - target: {fileID: 7651409223560793762, guid: 8d330ecde21c4c74eafc5d76de101d4d,
         type: 3}
       propertyPath: m_Layer
@@ -409,3 +419,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d330ecde21c4c74eafc5d76de101d4d, type: 3}
+--- !u!1 &2142994312622392476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6685549841999323373, guid: 8d330ecde21c4c74eafc5d76de101d4d,
+    type: 3}
+  m_PrefabInstance: {fileID: 4718270278009070705}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &490191699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142994312622392476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
